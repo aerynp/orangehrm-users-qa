@@ -1,0 +1,21 @@
+{
+  "name": "orangehrm-system-users-qa",
+  "version": "1.0.0",
+  "description": "Playwright + TypeScript E2E suite for OrangeHRM demo - Admin > User Management > Users",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:debug": "playwright test --debug",
+    "codegen": "playwright codegen https://opensource-demo.orangehrmlive.com",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^20.14.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.5.0"
+  }
+}
